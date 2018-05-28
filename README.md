@@ -15,4 +15,4 @@ Update cliente
 curl --Header "DATA: fb48b5619accfdb6ef9315560e0fff8a9c927ad39986241b55558f57efbd3529" -X PUT -d id=1 -d nombre=Juan -d apellidoPaterno=Perez -d apellidoMaterno=Hernandez -d fechaNacimiento=1981/04/02 -d rfc=JUPH800402185 -d numeroCelular=5654451234 -d email=asalinas@santander.com localhost:8000/client
 
 Delete client
-curl --Header "DATA: fb48b5619accfdb6ef9315560e0fff8a9c927ad39986241b55558f57efbd3529" -X DELETE -d id=1 -d nombre=Juan -d apellidoPaterno=Perez -d apellidoMaterno=Hernandez -d fechaNacimiento=1981/04/02 -d rfc=JUPH800402185 -d numeroCelular=5654451234 -d email=asalinas@santander.com localhost:8000/client
+curl --Header "DATA: fb48b5619accfdb6ef9315560e0fff8a9c927ad39986241b55558f57efbd3529" -X DELETE localhost:8000/client/1
