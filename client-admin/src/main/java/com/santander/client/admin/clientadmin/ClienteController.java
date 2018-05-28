@@ -47,11 +47,11 @@ public class ClienteController {
 		clienteRepository.save(cliente);
 	}
 	
-	@RequestMapping(method = RequestMethod.DELETE)
+	@RequestMapping(value="/{id}", method = RequestMethod.DELETE)
 	@ResponseStatus(HttpStatus.ACCEPTED)
-	public void deleteCliente(@RequestHeader(value="DATA", required = true) String data, Cliente cliente) {
+	public void deleteCliente(@RequestHeader(value="DATA", required = true) String data, @PathVariable Long id) {
 		this.checkHeader(data);
-		clienteRepository.delete(cliente);
+		clienteRepository.deleteById(id);
 	}
 	
 	@RequestMapping(method = RequestMethod.POST)
