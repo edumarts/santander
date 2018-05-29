@@ -4,7 +4,9 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ClienteServiceImpl implements ClienteService {
 	String nameReg = "^[\\wÀ-ÖØ-öø-ÿ\\s]*$";
 	String emailReg = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$";
